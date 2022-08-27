@@ -1,0 +1,68 @@
+2-1 JAVA. 객체생성 & 접근지정자
+
+1. 클래스
+ (1) 개념
+  - 객체지향 언어에서 현실세계를 표현하기 위한 객체
+  - 현실세계에서 보는 유형,무형의 모든것들이 객체로 표현이 된다.
+ (2) 구성요소
+  - 멤버변수(field)
+   * 객체의 고유한 속성,상태를 담고있는 변수
+  - 메서드
+   * 객체의 속성과 상태를 변경할수 있는 연산
+  - 생성자(Constructor)
+   * 객체가 생성될때 멤버변수들을 초기화해주는 역할
+   * 클래스명과 동일하고, 여러개의 생성자가 올수있다.
+   
+2. 인스턴스
+ (1) 개념
+  - 객체를 소프트웨어에서 실체화하게 되면 인스턴스가 된다.
+  - 실체화된 인스턴스는 메모리를 할당받게 된다.
+  - 틀에서 뭔가 하나 실체화 시킨거..
+ (2) 특징
+  - 인스턴스는 객체에 포함되어 있따고 볼수 있다.
+  - 객체가 메모리에 할당되어 사용될때 인스턴스라고 부른다
+  - 클래스가 가지고있는 메서드를 모두 사용할수 있다
+  
+3. 접근지정자
+ (1) 개념
+  - 클래스의 멤버변수와 메서드를 외부에서 접근할수 있는 범위를 지정한다
+  - private(동일클래스에서만), protected(동일클래스,해당패키지,상속관계),
+    default(동일클래스,해당패키지),public(퍼블릭)
+	
+4. 클래스및 인스턴스 생성 예
+ class Car{
+ // 멤버변수 정의
+  public String model;
+  private int year;
+  
+ // 생성자 정의
+  Car(){
+   this.model="없음";
+   this.year="2022"
+  }
+   Car(String model, int year){
+    this.model=model;
+	this.year=year;
+   }
+ }
+ 
+ // 메서드 정의 (getter, setter)
+  public void setModel(String model){
+   this.model=model;
+  }
+  public String getModel(){
+   return this.model;
+  }
+  public void setYear(int year){
+   this.year=year;
+  }
+  public int getYear(){
+   return this.year
+  }
+	
+public static void main(String[] args){
+// 인스턴스 생성
+ Car a = new Car();
+ Car b = new Car("Sonata",2021);
+}
+ 
