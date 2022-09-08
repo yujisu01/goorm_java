@@ -1,7 +1,7 @@
 package goormJava.MainExam;
 
 // 정보처리기사 2022-2회 실기 기출문제 (17번)
-public class exam01 {
+public class exam01_2202_17 {
 	static public class conv{
 		public conv(int a) {
 			this.a=a;}
