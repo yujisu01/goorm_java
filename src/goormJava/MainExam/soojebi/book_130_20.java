@@ -17,5 +17,7 @@ public class book_130_20 {
 		Parent pa=new Child();
 		pa.print();
 	}
-// 오버라이딩임?
 }
+// 오버라이딩 문제
+// index02_04.txt 참고
+// 상속관계면 부모클래스에서 정의된 메서드를 다시 재정의한다.

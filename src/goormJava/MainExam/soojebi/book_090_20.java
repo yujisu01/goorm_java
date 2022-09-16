@@ -6,11 +6,11 @@ public class book_090_20 {
 		int result=0;
 		for(int i=0;i<5;i++) {
 			numArr[i]=++i;
-			System.out.println(i);
+			System.out.printf("i=%d ,\n",i);
 		}
 		for(int i:numArr) {
 			result+=i;
-			System.out.printf("%d ", result);
+			System.out.printf("%d \n", result);
 		}
 		System.out.printf("result=%d", result);
 	}
