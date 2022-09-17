@@ -1,0 +1,18 @@
+02.프로세스 스케줄링-SJF(Shortest Job First)
+
+실행시간이 짧은것을 먼저 cpu에 집어넣는것 이다.
+
+2가지가 있는데, Shortest Job First랑, Shortest Remaining Time (SRT)가 있다. 
+이중 SJF에 대해서 아라보쟈 
+
+
+선점형과 비선점형이 있다.
+선점형: RR(라운드로빈),SRT,MLQ,MLFQ (SMMR)
+비선점형: 우선순위,기한부,HRN,FCFS,SJF (우기HFS)
+
+으아아아아아아 정처기 
+
+
+SJF (Shortest Job First)
+
+실행시간  대기시간  반환시간 틀 그려놓고 계산 ㄱ
