@@ -1,0 +1,50 @@
+03. 다음 영문의 괄호안에 적합한 수식의 표현은?
+
+	The reverse Polish notation is in a form suitable for stack
+	manipulation. The expression (A+B)*(C+D) is written in
+	reverse Polish notation as ().
+	
+	(1) AB+CD+*
+	(2) AB+CD*+
+	(3) +AB+CD*
+	(4) *+AB+CD
+	
+	
+	//해설
+	
+	폴란드식 표기법..후위식으로 바꿔라..
+	
+	(A+B)*(C+D) 
+	
+1. AB+ CD+  일단 괄호안에꺼를 하나의 데이터로 만들어놓음
+2. AB+CD+*  *를 뒤로 뺐음.
+
+
+	//정답(1) 
+	
+	
+	
+	
+----------------------------------------------------
+04. 중위표기법으로 표현한 다음 수식을 후위 표기법으로 옳게 표현한것은?
+
+	a/b+c-d*e
+	
+	(1) a/b+c-d*e
+	(2) ab/c+de*-
+	(3) -+/abc*de
+	(4) a/b+de*c
+	
+	
+	//해설
+	
+	연산자 우선순위 해준다 이거는 괄호가 없음 /랑 *가 지금 젤큼
+	ab/ 해주고, de*  이렇게 하나의 데이터가 된다.
+	ab/ +c- de* 
+	ab/ c+ - de* 
+	그릭 c+이 하나의 데이터가된다.
+	
+	ab/ (데이터) c+ (데이터) de* (데이터) - (연산자) 
+	일단 연산자는 뒤로 빼버려야됨 
+	
+	//답 (2) 
