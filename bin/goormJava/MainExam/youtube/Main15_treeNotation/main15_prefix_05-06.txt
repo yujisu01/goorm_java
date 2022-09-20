@@ -1,0 +1,56 @@
+05.중위표기법의 수식을 전위표기법으로 변환하라
+
+	(a+b)*c+d
+	
+	
+	(1) a+b*c+d
+	(2) ab+c*d+
+	(3) +ab*+cd
+	(4) abcd+*+
+	(5) +*+abcd
+	
+	
+	//해설
+	
+	(1) +ab  (data) *c+d
+	(2) *+ab (data) c+d 
+	(3) +*+abcd
+	
+	
+	//정답(4)
+	
+	
+	전위->중위도 해보기 
+	
+-----------------------------------------------------
+	* 교육청?공무원 문제 인데 개같은문제
+06. 후위표기법(postfix notation)으로 된 다음식의
+	전위표기법(prefix notation)으로 옳은것은?
+	
+	abc+d/-ae+bf*/+
+	
+	(1) 보기 생략
+	
+	
+	//해설
+	abc+d/-ae+bf*/+
+	
+	(1) a b+c d/-ae+bf*/+  
+		a b+c /d -ae+bf*/+
+		a-b+c/d (data)  a+e (data) b*f (data) /+
+		a-b+c/d (data) a+e (data) / b*f (data) +
+		a-b+c/d (data) + (연산자쏙) a+e (data) / b*f (data)
+		
+		중위끝
+		
+		전위시작
+	(2) a-b+c/d + a+e / b*f 
+		a-(b+c)/d +(a+e)/(b*f)
+		a-(+bc) /d +(+ae)/(*bf)
+		a- /+bcd + /+ae *bf
+		-a +/+bcd /+ae *bf
+		
+		아 진짜 ㅈㄴ복잡하네 정처기에서는 이렇게 나오진 앟음
+		
+		
+		
