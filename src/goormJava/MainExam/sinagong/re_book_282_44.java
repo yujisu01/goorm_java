@@ -1,6 +1,6 @@
 package goormJava.MainExam.sinagong;
 
-public class book_282_44 {
+public class re_book_282_44 {
 	public static void main(String[] args) {
 		int p=2;
 		int n=3;

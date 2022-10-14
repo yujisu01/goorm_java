@@ -16,12 +16,11 @@ public class main06 {
 	}
 }
 	public static void main(String[] args) {
-		// (1) c1은 Parent상속받음.
-		// 이때 Parent의 a와, 내가 갖고있는 a 둘다 공존
+	
 		Child c1= new Child();
 		System.out.print(c1.fun1()+",");
 		System.out.print(c1.fun2()+",");
-		// Child1의 a(=500)값을 300으로 변경
+		
 		c1.a=300;
 		System.out.print(c1.fun1()+",");
 		System.out.println(c1.fun2()+",");
@@ -29,7 +28,13 @@ public class main06 {
 		Parent p2=new Child();
 		p2.a=700;
 		System.out.print(p2.a+",");
-		// c1(child)에 들어있는 현재 a값 출력
+		
 		System.out.print(c1.a);
 	}
 }
+
+// (1) c1은 Parent상속받음.
+// 이때 Parent의 a와, 내가 갖고있는 a 둘다 공존
+
+//Child1의 a(=500)값을 300으로 변경
+//c1(child)에 들어있는 현재 a값 출력

@@ -1,6 +1,6 @@
 package goormJava.MainExam.sinagong.forwenti;
 
-public class book_276_37 {
+public class re_book_276_37 {
 	public static void main(String[] args) {
 		int numAry[]= {0,0,0,0,3};
 		int i,j;
